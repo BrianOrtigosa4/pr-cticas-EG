@@ -1,0 +1,90 @@
+1. CSS (Cascading Style Sheets – Hojas de Estilo en Cascada) es un lenguaje que se usa para definir la apariencia y el formato de los documentos HTML.
+Sirve para controlar cómo se ven los elementos de una página web: colores, fuentes, tamaños, márgenes, posiciones, etc.
+
+2. Una regla CSS indica qué elementos del HTML se verán afectados y qué estilo se aplicará.
+Cada regla tiene dos partes:
+Selector {
+
+    propiedad: valor;
+}
+
+Selector: el elemento HTML al que se aplica el estilo.
+
+Propiedad: la característica que se quiere modificar (color, tamaño, margen, etc.).
+
+Valor: el valor que se asigna a esa propiedad.
+
+3. Estilo en línea (inline):
+Se escribe directamente dentro del elemento HTML.
+<p style="color: green;">Texto verde</p>
+
+Estilo interno (en el encabezado):
+Se coloca dentro de una etiqueta <style> en el <head>.
+<style>
+  p { color: blue; }
+</style>
+
+Estilo externo (en un archivo .css separado):
+Se guarda en un archivo CSS y se vincula con <link>.
+
+<link rel="stylesheet" href="estilos.css">
+
+En el archivo .css
+p { color: red; }
+
+4. Los más comunes son
+
+De etiqueta
+p { }
+Aplica a todas las etiquetas <p>.
+
+De clase
+.rojo { }
+Aplica a los elementos con class="rojo".
+
+De id
+#titulo { }
+Aplica al elemento con id="titulo".
+
+Descendiente
+div p { }
+Aplica a los <p> dentro de un <div>.
+
+Universal
+* { }
+Aplica a todos los elementos del documento.
+
+De atributo
+input[type="text"] { }
+Aplica a los <input> que tengan type="text".
+
+5. Una pseudo-clase define un estado especial de un elemento, por ejemplo, cuando el usuario pasa el mouse o hace clic.
+
+Las pseudo-clases más usadas en vínculos (<a>) son:
+
+a:link
+Enlace normal, no visitado.
+
+a:visited
+Enlace ya visitado.
+
+a:hover
+Cuando el cursor pasa sobre el enlace.
+
+a:active
+Cuando el enlace está siendo clickeado.
+
+6. La herencia significa que algunos estilos aplicados a un elemento se transmiten automáticamente a sus elementos hijos (contenidos dentro de él).
+
+La cascada es el mecanismo que usa CSS para decidir qué estilo aplicar cuando hay varias reglas que afectan al mismo elemento.
+Se basa en tres principios:
+
+1) Origen del estilo:
+(Navegador, autor o usuario; los del autor tienen prioridad).
+
+2) Especificidad:
+Las reglas más específicas tienen prioridad (id > class > etiqueta).
+
+3) Orden:
+Si hay conflicto, la última regla escrita tiene prioridad.
+

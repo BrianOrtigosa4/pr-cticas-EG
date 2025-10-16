@@ -1,0 +1,22 @@
+<html>
+<head><title>Alta Ciudad</title></head>
+<body>
+<form action="Alta.php" method="POST">
+<table>
+<tr><td>Nombre:</td><td><input type="text" name="nombre" maxlength="70"></td></tr>
+<tr><td>Pais:</td><td><input type="text" name="pais" maxlength="70"></td></tr>
+<tr><td>Habitantes:</td><td><input type="number" name="habitantes"></td></tr>
+<tr><td>Superficie:</td><td><input type="number" name="superficie"></td></tr>
+<tr><td>¿Tiene Metro?</td>
+<td>
+  <select name="tieneMetro">
+    <option value="1">Si</option>
+    <option value="0">No</option>
+  </select>
+</td></tr>
+<tr><td colspan="2" align="center"><input type="submit" value="Agregar"></td></tr>
+</table>
+<p><a href="Menu.html">Volver al menu</a></p>
+</form>
+</body>
+</html>
